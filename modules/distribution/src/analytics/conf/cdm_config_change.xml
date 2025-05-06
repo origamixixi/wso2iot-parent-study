@@ -1,0 +1,16 @@
+<processor>
+    <!-- Remove current PushNotificationProviders config -->
+    <remove>
+        <name>//DeviceMgtConfiguration/PushNotificationConfiguration</name>
+    </remove>
+    <!-- Remove current DeviceStatusTask config -->
+    <remove>
+        <name>//DeviceMgtConfiguration/DeviceStatusTaskConfig</name>
+    </remove>
+
+    <!-- Add modified config -->
+    <add>
+        <inside>//DeviceMgtConfiguration</inside>
+        <file>src/analytics/conf/modified_cdm_config.xml</file>
+    </add>
+</processor>
